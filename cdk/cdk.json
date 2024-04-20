@@ -1,0 +1,25 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/cdk.ts",
+  "context": {
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "aws-cdk:enableDiffNoFail": "true",
+    "@aws-cdk/core:stackRelativeExports": "true",
+    "@aws-cdk/aws-ecr-assets:dockerIgnoreSupport": true,
+    "@aws-cdk/aws-kms:defaultKeyPolicies": true,
+    "@aws-cdk/aws-s3:grantWriteWithoutAcl": true,
+    "@aws-cdk/aws-ecs-patterns:removeDefaultDesiredCount": true,
+    "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
+    "@aws-cdk/aws-lambda:recognizeVersionProps": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "app-config/albCertificateArn": "arn:aws:acm:us-east-1:064822728318:certificate/5c2521ed-a2a1-478a-82c6-cd274441dc5c",
+    "app-config/cfCertificateArn": "arn:aws:acm:us-east-1:064822728318:certificate/ffb35b27-5063-4416-95d1-19be1d8e6537",
+    "app-config/cfDomain": "dev-learn.examsaide.com",
+    "app-config/moodleImageUri": "064822728318.dkr.ecr.us-east-1.amazonaws.com/moodle-image:latest",
+    "app-config/serviceReplicaDesiredCount": 1,
+    "app-config/serviceHealthCheckGracePeriodSeconds": 1800,
+    "app-config/cfDistributionOriginTimeoutSeconds": 60,
+    "app-config/rdsEventSubscriptionEmailAddress": "user@example.com",
+    "app-config/rdsInstanceType": "r6g.large",
+    "app-config/elastiCacheRedisInstanceType": "cache.r6g.large"
+  }
+}
